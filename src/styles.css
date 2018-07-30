@@ -1,3 +1,22 @@
 body {
-  background-color: #7FDBFF;
+  bbackground-color: #7FDBFF;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 3px;
+}
+
+.cell {
+  min-height: 100px;
+  border: 1px solid black;
+}
+
+.cardName {
+  display: none;
+}
+
+.blocker {
+  pointer-events: none;
 }

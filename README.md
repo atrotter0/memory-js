@@ -1,12 +1,12 @@
-# Ping Pong
+# Memory
 
 #### Epicodus JavaScript exercise, 7.29.18
 
-#### By Abel Trotter
+#### By Abel Trotter and Kevin Ahn
 
 ## Description
 
-A simple exercise to practice using npm and configure webpack.
+A simple JavaScript memory game.
 
 ## Setup on OSX
 
@@ -33,4 +33,4 @@ A simple exercise to practice using npm and configure webpack.
 
 This software is licensed under the MIT license.
 
-Copyright (c) 2018 **Abel Trotter**
+Copyright (c) 2018 **Abel Trotter & Kevin Ahn**
