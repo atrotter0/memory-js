@@ -1,5 +1,6 @@
 export function MemoryGame() {
   this.NUMBER_OF_MATCHES = 5;
+  this.SECOND_CLICK = 1;
   this.tiles = [];
   this.clicks = 0;
   this.firstTile = "";
@@ -19,8 +20,7 @@ MemoryGame.prototype.buildTiles = function() {
 MemoryGame.prototype.buildGameBoard = function() {
   for(var i = 0; i < this.NUMBER_OF_MATCHES * 2; i++) {
     var randomTile = Math.floor(Math.random() * this.tiles.length);
-    console.log(randomTile);
-    var divToAppend = "<div class='cell' name='"+ this.tiles[randomTile].matchId + "'>" +
+    var divToAppend = "<div class='tile' name='"+ this.tiles[randomTile].matchId + "'>" +
       "<span class='cardName noMatch'>" + this.tiles[randomTile].matchId + "</span></div>";
     this.tiles.splice(randomTile, 1);
     $(".cardGrid").append(divToAppend);
@@ -30,6 +30,4 @@ MemoryGame.prototype.buildGameBoard = function() {
 export function Tile(id, matchId) {
   this.id = id;
   this.matchId = matchId;
-  this.filename = matchId + ".jpg";
-  this.found = false;
 }
